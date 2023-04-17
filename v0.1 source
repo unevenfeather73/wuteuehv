@@ -1,0 +1,309 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local armory = Instance.new("TextButton")
+local atvspawn = Instance.new("TextButton")
+local base = Instance.new("TextButton")
+local cafe = Instance.new("TextButton")
+local cell = Instance.new("TextButton")
+local courtyard = Instance.new("TextButton")
+local fakeid = Instance.new("TextButton")
+local fugitive = Instance.new("TextButton")
+local heli = Instance.new("TextButton")
+local main = Instance.new("TextButton")
+local prisonside = Instance.new("TextButton")
+local roof = Instance.new("TextButton")
+local waterfall = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.678536236, 0, 0.101584025, 0)
+Frame.Size = UDim2.new(0, 372, 0, 478)
+Frame.Active = true
+Frame.Draggable = true
+
+armory.Name = "armory"
+armory.Parent = Frame
+armory.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+armory.BorderColor3 = Color3.fromRGB(255, 219, 16)
+armory.Position = UDim2.new(0.710017025, 0, 0.123589933, 0)
+armory.Size = UDim2.new(0, 99, 0, 70)
+armory.Font = Enum.Font.SourceSans
+armory.Text = "ARMORY"
+armory.TextColor3 = Color3.fromRGB(255, 219, 16)
+armory.TextSize = 14.000
+armory.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace").table.Part.CFrame)
+end)
+
+atvspawn.Name = "atv spawn"
+atvspawn.Parent = Frame
+atvspawn.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+atvspawn.BorderColor3 = Color3.fromRGB(255, 219, 16)
+atvspawn.Position = UDim2.new(0.0302274972, 0, 0.309112757, 0)
+atvspawn.Size = UDim2.new(0, 102, 0, 72)
+atvspawn.Font = Enum.Font.SourceSans
+atvspawn.Text = "ATV SPAWN (police)"
+atvspawn.TextColor3 = Color3.fromRGB(255, 219, 16)
+atvspawn.TextSize = 14.000
+atvspawn.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace").helmetRack.Union.CFrame)
+end)
+
+base.Name = "base"
+base.Parent = Frame
+base.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+base.BorderColor3 = Color3.fromRGB(255, 219, 16)
+base.Position = UDim2.new(0.35838598, 0, 0.645388961, 0)
+base.Size = UDim2.new(0, 104, 0, 75)
+base.Font = Enum.Font.SourceSans
+base.Text = "BASE"
+base.TextColor3 = Color3.fromRGB(255, 219, 16)
+base.TextSize = 14.000
+base.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace")["Military Canvas"].Part.CFrame)
+end)
+
+cafe.Name = "cafe"
+cafe.Parent = Frame
+cafe.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+cafe.BorderColor3 = Color3.fromRGB(255, 219, 16)
+cafe.Position = UDim2.new(0.0280581247, 0, 0.48114562, 0)
+cafe.Size = UDim2.new(0, 104, 0, 70)
+cafe.Font = Enum.Font.SourceSans
+cafe.Text = "CAFETERIA"
+cafe.TextColor3 = Color3.fromRGB(255, 219, 16)
+cafe.TextSize = 14.000
+cafe.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace").ceiling.ceiling.CFrame)
+end)
+
+cell.Name = "cell"
+cell.Parent = Frame
+cell.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+cell.BorderColor3 = Color3.fromRGB(255, 219, 16)
+cell.Position = UDim2.new(0.716252804, 0, 0.480314881, 0)
+cell.Size = UDim2.new(0, 96, 0, 72)
+cell.Font = Enum.Font.SourceSans
+cell.Text = "CELL"
+cell.TextColor3 = Color3.fromRGB(255, 219, 16)
+cell.TextSize = 14.000
+cell.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace").cell.mirror.CFrame)
+end)
+
+courtyard.Name = "courtyard"
+courtyard.Parent = Frame
+courtyard.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+courtyard.BorderColor3 = Color3.fromRGB(255, 219, 16)
+courtyard.Position = UDim2.new(0.362739801, 0, 0.314207584, 0)
+courtyard.Size = UDim2.new(0, 102, 0, 69)
+courtyard.Font = Enum.Font.SourceSans
+courtyard.Text = "COURTYARD"
+courtyard.TextColor3 = Color3.fromRGB(255, 219, 16)
+courtyard.TextSize = 14.000
+courtyard.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace").AllDoors.Hatch.status.CFrame)
+end)
+
+fakeid.Name = "fake id"
+fakeid.Parent = Frame
+fakeid.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+fakeid.BorderColor3 = Color3.fromRGB(255, 219, 16)
+fakeid.Position = UDim2.new(0.363059103, 0, 0.482542545, 0)
+fakeid.Size = UDim2.new(0, 102, 0, 69)
+fakeid.Font = Enum.Font.SourceSans
+fakeid.Text = "FAKE ID HOUSE"
+fakeid.TextColor3 = Color3.fromRGB(255, 219, 16)
+fakeid.TextSize = 14.000
+fakeid.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace")["Fake ID Card"].CFrame)
+end)
+
+fugitive.Name = "fugitive"
+fugitive.Parent = Frame
+fugitive.BackgroundColor3 = Color3.fromRGB(251, 255, 14)
+fugitive.Position = UDim2.new(0.00199053367, 0, 0.820859015, 0)
+fugitive.Size = UDim2.new(0, 371, 0, 31)
+fugitive.Font = Enum.Font.Michroma
+fugitive.Text = "FUGITIVE"
+fugitive.TextColor3 = Color3.fromRGB(0, 0, 0)
+fugitive.TextSize = 14.000
+fugitive.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace")["robber spawn"].CFrame)
+end)
+
+heli.Name = "heli"
+heli.Parent = Frame
+heli.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+heli.BorderColor3 = Color3.fromRGB(255, 219, 16)
+heli.Position = UDim2.new(0.714987814, 0, 0.651652575, 0)
+heli.Size = UDim2.new(0, 95, 0, 69)
+heli.Font = Enum.Font.SourceSans
+heli.Text = "HELI"
+heli.TextColor3 = Color3.fromRGB(255, 219, 16)
+heli.TextSize = 14.000
+heli.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace").ammoCrate.CFrame)
+end)
+
+main.Name = "main"
+main.Parent = Frame
+main.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+main.BorderColor3 = Color3.fromRGB(255, 219, 16)
+main.Position = UDim2.new(0.0283954572, 0, 0.652601898, 0)
+main.Size = UDim2.new(0, 105, 0, 69)
+main.Font = Enum.Font.SourceSans
+main.Text = "MAIN"
+main.TextColor3 = Color3.fromRGB(255, 219, 16)
+main.TextSize = 14.000
+main.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace").chair.barrier.CFrame)
+end)
+
+prisonside.Name = "prison side"
+prisonside.Parent = Frame
+prisonside.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+prisonside.BorderColor3 = Color3.fromRGB(255, 219, 16)
+prisonside.Position = UDim2.new(0.0316493809, 0, 0.125405222, 0)
+prisonside.Size = UDim2.new(0, 100, 0, 69)
+prisonside.Font = Enum.Font.SourceSans
+prisonside.Text = "PRISON SIDE"
+prisonside.TextColor3 = Color3.fromRGB(255, 219, 16)
+prisonside.TextSize = 14.000
+prisonside.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace").AllDoors.SwingDoor.part.CFrame)
+end)
+
+roof.Name = "roof"
+roof.Parent = Frame
+roof.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+roof.BorderColor3 = Color3.fromRGB(255, 219, 16)
+roof.Position = UDim2.new(0.71329689, 0, 0.307829708, 0)
+roof.Size = UDim2.new(0, 97, 0, 69)
+roof.Font = Enum.Font.SourceSans
+roof.Text = "ROOF"
+roof.TextColor3 = Color3.fromRGB(255, 219, 16)
+roof.TextSize = 14.000
+roof.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace").Truss.CFrame)
+end)
+
+waterfall.Name = "waterfall"
+waterfall.Parent = Frame
+waterfall.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+waterfall.BorderColor3 = Color3.fromRGB(255, 219, 16)
+waterfall.Position = UDim2.new(0.360422432, 0, 0.124260299, 0)
+waterfall.Size = UDim2.new(0, 101, 0, 69)
+waterfall.Font = Enum.Font.SourceSans
+waterfall.Text = "WATERFALL"
+waterfall.TextColor3 = Color3.fromRGB(255, 219, 16)
+waterfall.TextSize = 14.000
+waterfall.MouseButton1Down:connect(function()
+	function teleportTO(placeCFrame)
+		local plyer = game.Players.LocalPlayer;
+		if plyer.Character then
+			plyer. Character.HumanoidRootPart.CFrame = placeCFrame;
+		end
+	end
+	teleportTO(game:GetService("Workspace").water.CFrame)
+end)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+TextLabel.Position = UDim2.new(-0.000968030712, 0, 0.886734128, 0)
+TextLabel.Size = UDim2.new(0, 372, 0, 54)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "SCRIPT BY: wuteuehv"
+TextLabel.TextColor3 = Color3.fromRGB(255, 219, 16)
+TextLabel.TextSize = 14.000
+
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 158, 22)
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.Position = UDim2.new(-0.00170603103, 0, -0.00115486374, 0)
+TextLabel_2.Size = UDim2.new(0, 372, 0, 49)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "5o4 HUB RedWood (Ver 0.1)"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 219, 16)
+TextLabel_2.TextSize = 14.000
